@@ -1,0 +1,1252 @@
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDevices (20140322225613)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "devices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "refid" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140322225613"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/api/v1/devices/" for 127.0.0.1 at 2014-03-22 19:07:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/devices/"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.0ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.2ms)
+
+
+Started GET "/api/v1/devices/" for 127.0.0.1 at 2014-03-22 19:08:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/devices/"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.7ms)
+
+
+Started GET "/api/v1/devices.json" for 127.0.0.1 at 2014-03-22 19:08:17 -0400
+Processing by Api::V1::DevicesController#index as JSON
+  [1m[35mDevice Load (0.2ms)[0m  SELECT "devices".* FROM "devices"
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/.json" for 127.0.0.1 at 2014-03-22 19:08:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/devices/.json"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.9ms)
+
+
+Started GET "/api/v1/devices.json" for 127.0.0.1 at 2014-03-22 19:08:24 -0400
+Processing by Api::V1::DevicesController#index as JSON
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT "devices".* FROM "devices"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+  [1m[36mDevice Load (3.2ms)[0m  [1mSELECT "devices".* FROM "devices"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "devices" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-03-22 23:09:12.919004"], ["updated_at", "2014-03-22 23:09:12.919004"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "devices" SET "refid" = ?, "updated_at" = ? WHERE "devices"."id" = 1  [["refid", 12345], ["updated_at", "2014-03-22 23:09:27.006344"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/devices.json" for 127.0.0.1 at 2014-03-22 19:09:31 -0400
+Processing by Api::V1::DevicesController#index as JSON
+  [1m[35mDevice Load (0.2ms)[0m  SELECT "devices".* FROM "devices"
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices.json" for 127.0.0.1 at 2014-03-22 19:09:59 -0400
+Processing by Api::V1::DevicesController#index as JSON
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT "devices".* FROM "devices"[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/1.json" for 127.0.0.1 at 2014-03-22 19:12:12 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/1.json" for 127.0.0.1 at 2014-03-22 19:12:14 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.1ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v1/devices/.json" for 127.0.0.1 at 2014-03-22 19:12:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/devices/.json"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.8ms)
+
+
+Started GET "/api/v1/devices/1.json" for 127.0.0.1 at 2014-03-22 19:12:20 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mDevice Load (0.1ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateApiKeys (20140322231333)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "api_keys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140322231333"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:18:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 26ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.3ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:22:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 27ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.4ms)
+
+
+Started GET "/api/v1/devices/test/" for 127.0.0.1 at 2014-03-22 19:22:07 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/devices/test/"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.1ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:22:11 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[36mDevice Load (0.1ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:22:28 -0400
+Processing by Api::V1::DevicesController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/api/v1/devices/1/test" for 127.0.0.1 at 2014-03-22 19:22:50 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/devices/1/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.5ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:23:11 -0400
+Processing by Api::V1::DevicesController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[36mDevice Load (0.1ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:25:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 27ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.8ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:25:36 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/api/v1/devices/1" for 127.0.0.1 at 2014-03-22 19:25:39 -0400
+Processing by Api::V1::DevicesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 1]]
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/api/v1/devices/1.json" for 127.0.0.1 at 2014-03-22 19:25:46 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:25:49 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.1ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.6ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:27:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 28ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:27:37 -0400
+Processing by Api::V1::DevicesController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[36mDevice Load (0.1ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.2ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:27:40 -0400
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.1ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:28:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#show as JSON
+  Parameters: {"id"=>"test"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 27ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:28:30 -0400
+Processing by Api::V1::DevicesController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Device with id=test):
+  app/controllers/api/v1/devices_controller.rb:11:in `show'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:31:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"controller"=>"api/v1/devices", "action"=>"test"}
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:31:23 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"controller"=>"api/v1/devices", "action"=>"test", "format"=>"json"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:58:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant Api::V1::DevicesController::RAILS_ROOT):
+  app/controllers/api/v1/devices_controller.rb:4:in `<class:DevicesController>'
+  app/controllers/api/v1/devices_controller.rb:3:in `<module:V1>'
+  app/controllers/api/v1/devices_controller.rb:2:in `<module:Api>'
+  app/controllers/api/v1/devices_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.9ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:58:52 -0400
+
+ActionController::RoutingError (uninitialized constant Api::V1::DevicesController::RAILS_ROOT):
+  app/controllers/api/v1/devices_controller.rb:4:in `<class:DevicesController>'
+  app/controllers/api/v1/devices_controller.rb:3:in `<module:V1>'
+  app/controllers/api/v1/devices_controller.rb:2:in `<module:Api>'
+  app/controllers/api/v1/devices_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.8ms)
+
+
+Started GET "/api/v1/devices/test" for 127.0.0.1 at 2014-03-22 19:59:06 -0400
+
+ActionController::RoutingError (uninitialized constant Api::V1::DevicesController::RAILS_ROOT):
+  app/controllers/api/v1/devices_controller.rb:4:in `<class:DevicesController>'
+  app/controllers/api/v1/devices_controller.rb:3:in `<module:V1>'
+  app/controllers/api/v1/devices_controller.rb:2:in `<module:Api>'
+  app/controllers/api/v1/devices_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.7ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:59:14 -0400
+
+ActionController::RoutingError (uninitialized constant Api::V1::DevicesController::RAILS_ROOT):
+  app/controllers/api/v1/devices_controller.rb:4:in `<class:DevicesController>'
+  app/controllers/api/v1/devices_controller.rb:3:in `<module:V1>'
+  app/controllers/api/v1/devices_controller.rb:2:in `<module:Api>'
+  app/controllers/api/v1/devices_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.4ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 19:59:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:02:36 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `log' for #<Class:0x007f9aabb625b8>):
+  app/controllers/api/v1/devices_controller.rb:20:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.6ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:02:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (undefined method `log' for #<Class:0x007fa4f80506f0>):
+  app/controllers/api/v1/devices_controller.rb:20:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:10:11 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `log' for #<Class:0x007fa4f80506f0>):
+  app/controllers/api/v1/devices_controller.rb:20:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:10:42 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `log' for #<Class:0x007fa4f80ab618>):
+  app/controllers/api/v1/devices_controller.rb:20:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:10:48 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:10:49 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/devices/test" for 192.168.1.49 at 2014-03-22 20:16:02 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/devices/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (34.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.7ms)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "devices" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-03-23 00:17:57.153259"], ["updated_at", "2014-03-23 00:17:57.153259"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"   ORDER BY "devices"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "devices" SET "refid" = ?, "updated_at" = ? WHERE "devices"."id" = 2[0m  [["refid", "APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"], ["updated_at", "2014-03-23 00:19:41.978185"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:21:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 720ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/devices/test" for 192.168.1.49 at 2014-03-22 20:21:37 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/devices/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.0ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:21:44 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+  [1m[36mDevice Load (0.1ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 147ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/v1/devices/test" for 192.168.1.49 at 2014-03-22 20:21:50 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/devices/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.9ms)
+
+
+Started POST "/api/v1/devices/test" for 192.168.1.49 at 2014-03-22 20:21:54 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/devices/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.6ms)
+
+
+Started POST "/api/v1/devices/test" for 192.168.1.49 at 2014-03-22 20:22:01 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/devices/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.9ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-22 20:23:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 715ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/devices/test" for 192.168.1.49 at 2014-03-22 20:23:23 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/devices/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.6ms)
+
+
+Started POST "/api/v1/devices/test" for 192.168.1.49 at 2014-03-22 20:23:30 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/devices/test"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/api/v1/devices/test?more=data&key=value" for 192.168.1.49 at 2014-03-23 00:28:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"more"=>"data", "key"=>"value"}
+This is a test {"more"=>"data", "key"=>"value", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 785ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/test.json" for 127.0.0.1 at 2014-03-23 00:29:05 -0400
+Processing by Api::V1::DevicesController#test as JSON
+This is a test {"action"=>"test", "controller"=>"api/v1/devices", "format"=>"json"}
+  [1m[36mDevice Load (0.1ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 223ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v1/devices/test?more=data&key=value" for 192.168.1.49 at 2014-03-23 00:30:44 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"more"=>"data", "key"=>"value"}
+This is a test {"more"=>"data", "key"=>"value", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.1ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 200ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "api_keys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "devices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "refid" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140322231333')
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140322225613')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 00:37:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+Completed 500 Internal Server Error in 29ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/api/v1/devices_controller.rb:22:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.9ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 00:39:13 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+Completed 200 OK in 660ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36mDevice Load (2.0ms)[0m  [1mSELECT "devices".* FROM "devices"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "devices" ("created_at", "refid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-23 04:41:25.205586"], ["refid", "APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"], ["updated_at", "2014-03-23 04:41:25.205586"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "api_keys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "devices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "refid" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140322231333')
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140322225613')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateApiKeys (20140322231333)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  DROP TABLE "api_keys"
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140322231333'[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateDevices (20140322225613)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  DROP TABLE "devices"
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140322225613'[0m
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDevices (20140322225613)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "devices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "regid" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140322225613"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateApiKeys (20140322231333)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "api_keys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140322231333"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-03-23 04:47:11.661604"], ["regid", "APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"], ["updated_at", "2014-03-23 04:47:11.661604"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 00:48:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-23 04:48:24.612062"], ["regid", "APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"], ["updated_at", "2014-03-23 04:48:24.612062"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 200 OK in 336ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 00:49:44 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-03-23 04:49:44.925900"], ["regid", "APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"], ["updated_at", "2014-03-23 04:49:44.925900"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 636ms (Views: 0.4ms | ActiveRecord: 4.5ms)
+  [1m[35mDevice Load (2.6ms)[0m  SELECT "devices".* FROM "devices"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "devices"[0m
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 00:57:23 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.1ms)[0m  SELECT "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'
+Completed 500 Internal Server Error in 29ms
+
+NoMethodError (undefined method `regid' for #<Device::ActiveRecord_Relation:0x007fa78a79db30>):
+  app/controllers/api/v1/devices_controller.rb:26:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.3ms)
+  [1m[35mDevice Load (0.2ms)[0m  SELECT "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35mDevice Load (0.3ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'  ORDER BY "devices"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 00:59:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 299ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 00:59:30 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "devices" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-03-23 04:59:30.340884"], ["updated_at", "2014-03-23 04:59:30.340884"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 33ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:26:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.0ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 00:59:42 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.4ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:26:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+  [1m[36mDevice Load (2.0ms)[0m  [1mSELECT "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "devices"
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35mDevice Load (0.9ms)[0m  SELECT "devices".* FROM "devices"
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 01:06:29 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.9ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 272ms (Views: 0.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH-BbGt59skcRT_3PsJFB4PuazThaONUGgdO3WbnRU8wjntzSHIDgu7gOft9Ep-Hq1EfZu3hxl17KLPTiUAAd4Jmo40XEUbIqHYhZkukZOcRrNPZ8kyvNZjRVA0MPxnmut5jT9b86x-wbDFH0eQ56BnRi1fuxGHk6tK2GBZUGsjxLuN-1k" for 192.168.1.49 at 2014-03-23 02:09:13 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH-BbGt59skcRT_3PsJFB4PuazThaONUGgdO3WbnRU8wjntzSHIDgu7gOft9Ep-Hq1EfZu3hxl17KLPTiUAAd4Jmo40XEUbIqHYhZkukZOcRrNPZ8kyvNZjRVA0MPxnmut5jT9b86x-wbDFH0eQ56BnRi1fuxGHk6tK2GBZUGsjxLuN-1k"}
+This is a test {"regId"=>"APA91bH-BbGt59skcRT_3PsJFB4PuazThaONUGgdO3WbnRU8wjntzSHIDgu7gOft9Ep-Hq1EfZu3hxl17KLPTiUAAd4Jmo40XEUbIqHYhZkukZOcRrNPZ8kyvNZjRVA0MPxnmut5jT9b86x-wbDFH0eQ56BnRi1fuxGHk6tK2GBZUGsjxLuN-1k", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (2.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH-BbGt59skcRT_3PsJFB4PuazThaONUGgdO3WbnRU8wjntzSHIDgu7gOft9Ep-Hq1EfZu3hxl17KLPTiUAAd4Jmo40XEUbIqHYhZkukZOcRrNPZ8kyvNZjRVA0MPxnmut5jT9b86x-wbDFH0eQ56BnRi1fuxGHk6tK2GBZUGsjxLuN-1k'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-23 06:09:13.763074"], ["regid", "APA91bH-BbGt59skcRT_3PsJFB4PuazThaONUGgdO3WbnRU8wjntzSHIDgu7gOft9Ep-Hq1EfZu3hxl17KLPTiUAAd4Jmo40XEUbIqHYhZkukZOcRrNPZ8kyvNZjRVA0MPxnmut5jT9b86x-wbDFH0eQ56BnRi1fuxGHk6tK2GBZUGsjxLuN-1k"], ["updated_at", "2014-03-23 06:09:13.763074"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Completed 200 OK in 763ms (Views: 2.4ms | ActiveRecord: 5.0ms)
+  [1m[36mDevice Load (6.1ms)[0m  [1mSELECT "devices".* FROM "devices"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "devices"
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT "devices".* FROM "devices"[0m
+  [1m[35mDevice Load (0.4ms)[0m  SELECT  "devices".* FROM "devices"   ORDER BY "devices"."id" DESC LIMIT 1
+
+
+Started GET "/api/v1/devices/test?regId=APA91bFgUnDInivw_owcsjMOCuwuk2H-7gsQ8htCfln7OGeBjPgUGuglnULfW-fGm99eGXxItljVG-800ZWEmpeqRVEsBG6_smGHFZcT6Yfh7qqTK_Xt-2PTXYnQAhgSjj4dFXpXGZGltiwlfIrPzAI3Qg8HY8HObjC_E_fOELj41uAlhzNUCKI" for 192.168.1.49 at 2014-03-23 02:18:17 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bFgUnDInivw_owcsjMOCuwuk2H-7gsQ8htCfln7OGeBjPgUGuglnULfW-fGm99eGXxItljVG-800ZWEmpeqRVEsBG6_smGHFZcT6Yfh7qqTK_Xt-2PTXYnQAhgSjj4dFXpXGZGltiwlfIrPzAI3Qg8HY8HObjC_E_fOELj41uAlhzNUCKI"}
+This is a test {"regId"=>"APA91bFgUnDInivw_owcsjMOCuwuk2H-7gsQ8htCfln7OGeBjPgUGuglnULfW-fGm99eGXxItljVG-800ZWEmpeqRVEsBG6_smGHFZcT6Yfh7qqTK_Xt-2PTXYnQAhgSjj4dFXpXGZGltiwlfIrPzAI3Qg8HY8HObjC_E_fOELj41uAlhzNUCKI", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bFgUnDInivw_owcsjMOCuwuk2H-7gsQ8htCfln7OGeBjPgUGuglnULfW-fGm99eGXxItljVG-800ZWEmpeqRVEsBG6_smGHFZcT6Yfh7qqTK_Xt-2PTXYnQAhgSjj4dFXpXGZGltiwlfIrPzAI3Qg8HY8HObjC_E_fOELj41uAlhzNUCKI'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-23 06:18:17.493854"], ["regid", "APA91bFgUnDInivw_owcsjMOCuwuk2H-7gsQ8htCfln7OGeBjPgUGuglnULfW-fGm99eGXxItljVG-800ZWEmpeqRVEsBG6_smGHFZcT6Yfh7qqTK_Xt-2PTXYnQAhgSjj4dFXpXGZGltiwlfIrPzAI3Qg8HY8HObjC_E_fOELj41uAlhzNUCKI"], ["updated_at", "2014-03-23 06:18:17.493854"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Completed 200 OK in 280ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 02:19:46 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-23 06:19:46.213061"], ["regid", "APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"], ["updated_at", "2014-03-23 06:19:46.213061"]]
+  [1m[35m (9.2ms)[0m  commit transaction
+Completed 200 OK in 638ms (Views: 0.5ms | ActiveRecord: 9.7ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "devices"[0m
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 02:31:36 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.5ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 951ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 02:33:01 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.6ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 177ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 02:34:09 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.6ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:26:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.9ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 02:53:38 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (1.9ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 837ms (Views: 4.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 02:54:40 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (5.9ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 195ms (Views: 0.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 02:55:03 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 151ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 03:00:44 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 171ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 03:02:21 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 599ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 03:05:02 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 180ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (2.6ms)[0m  SELECT COUNT(*) FROM "devices"

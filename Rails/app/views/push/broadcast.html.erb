@@ -1,0 +1,7 @@
+<h1>Push#broadcast</h1>
+
+<%= form_tag("/push/broadcast", method: "put") do %>
+  <%= label_tag(:q, "Message: ") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Broadcast") %>
+<% end %>

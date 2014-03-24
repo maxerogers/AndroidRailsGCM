@@ -1,0 +1,115 @@
+package sbu.mad.android2rails2;
+
+import java.io.IOException;
+
+import sbu.mad.android.R;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.TextView;
+
+import com.google.android.gms.gcm.GoogleCloudMessaging;
+
+public class MainActivity extends Activity {
+	Context context;
+	GoogleCloudMessaging gcm;
+	String regid;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		context = this.getApplicationContext();
+		checkForRegId();
+	}
+
+	private void checkForRegId() {
+		Log.d("MAIN", "Attempting to Register GCM");
+		gcm = GoogleCloudMessaging.getInstance(this);
+		regid = getRegistrationId(context);
+		Log.d("MAIN", ""+regid);
+		if (TextUtils.isEmpty(regid) || regid == null) {
+			registerInBackground();
+		}else{
+			// Send Message to Server anyway
+			ShareExternalServer maester = new ShareExternalServer();
+			maester.shareRegIdWithAppServer(context, regid);
+		}
+	}
+
+	private String getRegistrationId(Context context) {
+		
+		return getPreferences(context).getString("regid", null);
+	}
+
+	/**
+	 * Registers the application with GCM servers asynchronously.
+	 * <p>
+	 * Stores the registration ID and the app versionCode in the application's
+	 * shared preferences.
+	 */
+	private void registerInBackground() {
+		new AsyncTask<Void, Void, String>() {
+			@Override
+			protected String doInBackground(Void... params) {
+				Log.d("GCM_Register","Attempting to Register GCM ID");
+				String msg = "";
+				try {
+					if (gcm == null) {
+						gcm = GoogleCloudMessaging.getInstance(context);
+					}
+					regid = gcm.register(Config.GOOGLE_ID);
+					msg = "Device registered, registration ID=" + regid;
+
+					// You should send the registration ID to your server over
+					// HTTP, so it can use GCM/HTTP or CCS to send messages to
+					// your app.
+					// sendRegistrationIdToBackend();
+					ShareExternalServer maester = new ShareExternalServer();
+					maester.shareRegIdWithAppServer(context, regid);
+
+					// For this demo: we use upstream GCM messages to send the
+					// registration ID to the 3rd party server
+
+					// Persist the regID - no need to register again.
+					 storeRegistrationId(context, regid);
+				} catch (IOException ex) {
+					msg = "Error :" + ex.getMessage();
+					// If there is an error, don't just keep trying to register.
+					// Require the user to click a button again, or perform
+					// exponential back-off.
+				}
+				return msg;
+			}
+
+			@Override
+			protected void onPostExecute(String msg) {
+				((TextView) findViewById(R.id.Log)).setText(regid);
+			}
+		}.execute(null, null, null);
+	}
+	/**
+     * Stores the registration ID in the application's
+     * {@code SharedPreferences}.
+     * @param regId
+     *            registration ID
+     */
+    private void storeRegistrationId(Context context, String regId)
+    {
+		final SharedPreferences prefs = getPreferences(context);
+		//int appVersion = getAppVersion(context);
+		Log.i("MAIN", "Saving regId");
+		prefs.edit().putString("regid", regId).commit();
+    }
+    
+    public SharedPreferences getPreferences(Context context){
+    	SharedPreferences prefs = getSharedPreferences(
+    		      "sbu.mad.android2rails2", context.MODE_PRIVATE);
+    	return prefs;
+    }
+}

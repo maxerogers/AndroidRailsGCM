@@ -1250,3 +1250,1275 @@ This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iW
   [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
 Completed 200 OK in 180ms (Views: 0.2ms | ActiveRecord: 0.2ms)
   [1m[35m (2.6ms)[0m  SELECT COUNT(*) FROM "devices"
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 14:48:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 828ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 14:54:26 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.1ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 194ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 14:56:57 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 750ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 14:59:06 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 629ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:01:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 626ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:06:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 331ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:08:59 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2484ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:17:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 342ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww" for 192.168.1.49 at 2014-03-23 15:24:20 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww"}
+This is a test {"regId"=>"APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bH4RfAR45WvoV0-Zvjot7Czha1UwyCLkjnB7CtDhhH-XHuLUOEnJ5qL9KpN1H0BVSnWG-DNjlM3ZAnOcAvFqaM0qyCCSRheaNOppuj5WIO-9l7OB-UDb4LDFo7V6jSs-Uc7fwYZCWGEAgKD4kew1Y60aCV5Ww'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 215ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:25:14 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 177ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:26:20 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 177ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:27:56 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 2675ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:29:18 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 756ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 15:33:29 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 625ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:03:26 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-23 20:03:26.690493"], ["regid", "APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"], ["updated_at", "2014-03-23 20:03:26.690493"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 200 OK in 275ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4" for 192.168.1.49 at 2014-03-23 16:05:34 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4"}
+This is a test {"regId"=>"APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.5ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bE9hg5eC9cCLJZ4E6q8M-krMKolecVp5QQFD6ClfWs2XYh-iWHZ21Cxd1PCX-lsXMsqMRKjR_S8bcraH2qKKShF5ThwPgfoIk_MCt_-ARBxu-YuF8WTLUQVw3d7P3YgMk6QB_PRcX787Dcb9bbsgcPhO6Jb_rChfihdDtO9Ho7CoJGAUc4'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 181ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:27:34 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (1.9ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 3026ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:29:58 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 3283ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:33:33 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 1407ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 16:34:18 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:41:04 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 5164ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=" for 192.168.1.49 at 2014-03-23 16:42:09 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>""}
+This is a test {"regId"=>"", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = ''  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (98.6ms)[0m  [1mINSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-23 20:42:09.418970"], ["regid", ""], ["updated_at", "2014-03-23 20:42:09.418970"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Completed 200 OK in 768ms (Views: 0.2ms | ActiveRecord: 103.9ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:44:50 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2094ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:45:44 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 2460ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 16:45:55 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 214ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[36mDevice Load (3.2ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+
+
+Started GET "/push" for 127.0.0.1 at 2014-03-23 18:00:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/push"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.2ms)
+
+
+Started GET "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:00:26 -0400
+Processing by PushController#broadcast as HTML
+  [1m[35mDevice Load (0.3ms)[0m  SELECT distinct regid FROM "devices"
+  Rendered push/broadcast.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 764ms
+
+ActionView::Template::Error (wrong number of arguments (4 for 0..3)):
+    1: <h1>Push#broadcast</h1>
+    2: <p>Find me in app/views/push/broadcast.html.erb</p>
+    3: <%= button_to "Update Specs", {:controller => :push, :action => :broadcast}, {:method => :put }, remote: true %>
+  app/views/push/broadcast.html.erb:3:in `_app_views_push_broadcast_html_erb__900092905349840406_70150267013460'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+
+
+Started GET "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:01:11 -0400
+Processing by PushController#broadcast as HTML
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+  Rendered push/broadcast.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2588ms (Views: 2335.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:01:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:13 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:13 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:01:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:14 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:01:16 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT distinct regid FROM "devices"
+  Rendered push/broadcast.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 289ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:01:56 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[36mDevice Load (0.6ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification
+  Rendered push/broadcast.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 593ms (Views: 5.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:01:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:01:57 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:57 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification
+  Rendered push/broadcast.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 206ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:01:58 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:01:59 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification
+  Rendered push/broadcast.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 195ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:02:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:02:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:02:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:02:00 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:02:00 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:02:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:02:00 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:21:42 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[35mDevice Load (1.4ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification
+  Rendered push/broadcast.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 281ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Push#broadcast</h1>
+    2: <p>Find me in app/views/push/broadcast.html.erb</p>
+    3:  <%= form_for @new_todo, :url => { :action => "broadcast" }  do |f|  %>
+    4:     <%= f.text_field  :todo_item %>
+    5:     <%= f.submit "Broadcast", class: "btn btn-primary" %>
+    6:  <%end%>
+  app/views/push/broadcast.html.erb:3:in `_app_views_push_broadcast_html_erb__900092905349840406_70150252565020'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.2ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:21:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:21:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:21:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:21:55 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:21:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:21:55 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:27:55 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[36mDevice Load (0.4ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification
+  Rendered push/broadcast.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 629ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:27:56 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:27:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:27:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:27:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:27:56 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:27:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:27:56 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[35mDevice Load (0.4ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification {"_method"=>"put", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "controller"=>"push", "action"=>"broadcast"}
+  Rendered push/broadcast.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 206ms (Views: 6.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:28:14 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[36mDevice Load (0.4ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification {"_method"=>"put", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "controller"=>"push", "action"=>"broadcast"}
+  Rendered push/broadcast.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 208ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:28:18 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:29:45 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk="}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification {"_method"=>"put", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "controller"=>"push", "action"=>"broadcast"}
+  Rendered push/broadcast.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 635ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:29:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:29:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:29:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:29:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:29:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:29:46 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:29:46 -0400
+
+
+Started PUT "/broadcast" for 127.0.0.1 at 2014-03-23 18:29:52 -0400
+
+ActionController::RoutingError (No route matches [PUT] "/broadcast"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.1ms)
+
+
+Started PUT "/broadcast" for 127.0.0.1 at 2014-03-23 18:30:28 -0400
+
+ActionController::RoutingError (No route matches [PUT] "/broadcast"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.8ms)
+
+
+Started GET "/broadcast" for 127.0.0.1 at 2014-03-23 18:30:31 -0400
+
+ActionController::RoutingError (No route matches [GET] "/broadcast"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.0ms)
+
+
+Started GET "/broadcast" for 127.0.0.1 at 2014-03-23 18:30:34 -0400
+
+ActionController::RoutingError (No route matches [GET] "/broadcast"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.4ms)
+
+
+Started GET "/broadcast" for 127.0.0.1 at 2014-03-23 18:30:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/broadcast"):
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.beta1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.beta1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.beta1) lib/active_support/cache/strategy/local_cache.rb:86:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.beta1) lib/rails/engine.rb:516:in `call'
+  railties (4.1.0.beta1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/max/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-23 18:30:43 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/railties-4.1.0.beta1/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+Processing by PushController#broadcast as HTML
+  [1m[36mDevice Load (0.5ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification {"controller"=>"push", "action"=>"broadcast"}
+  Rendered push/broadcast.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 158ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:47 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSH!!!", "commit"=>"Search"}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification {"utf8"=>"✓", "_method"=>"put", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSH!!!", "commit"=>"Search", "controller"=>"push", "action"=>"broadcast"}
+  Rendered push/broadcast.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 278ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:52 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:30:56 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSH!!!", "commit"=>"Search"}
+  [1m[36mDevice Load (0.4ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification {"utf8"=>"✓", "_method"=>"put", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSH!!!", "commit"=>"Search", "controller"=>"push", "action"=>"broadcast"}
+  Rendered push/broadcast.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 647ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:30:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:56 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:30:56 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:30:57 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:31:28 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSH!!!", "commit"=>"Search"}
+  [1m[35mDevice Load (0.4ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification PUSH!!!
+  Rendered push/broadcast.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 621ms (Views: 7.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:31:29 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:31:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:29 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:29 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:31:38 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSH!!!!!!", "commit"=>"Search"}
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification PUSH!!!!!!
+  Rendered push/broadcast.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 186ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:31:39 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:31:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:39 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:31:39 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:33:06 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSH!!!!!!", "commit"=>"Search"}
+  [1m[35mDevice Load (0.4ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification PUSH!!!!!!
+  Rendered push/broadcast.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 182ms (Views: 5.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:33:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:07 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:07 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:33:07 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSSH!!!!", "commit"=>"Search"}
+  [1m[36mDevice Load (0.3ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification PUSSH!!!!
+  Rendered push/broadcast.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 261ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:33:11 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:35:05 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSSH!!!!", "commit"=>"Search"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT distinct regid FROM "devices"
+SENDING send_notification PUSSH!!!!
+  Rendered push/broadcast.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 652ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:35:06 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:35:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:06 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:06 -0400
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"PUSSH!!!!", "commit"=>"Search"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification PUSSH!!!!
+  Rendered push/broadcast.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 208ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 18:35:15 -0400
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 19:46:17 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (1.4ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 697ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 19:46:33 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"Message", "commit"=>"Broadcast"}
+  [1m[36mDevice Load (0.6ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification Message
+  Rendered push/broadcast.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 178ms (Views: 8.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 19:46:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 19:46:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 19:46:34 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 19:46:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 19:46:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 19:46:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 19:46:34 -0400
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 19:47:33 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.6ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 182ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 19:55:29 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.5ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 278ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 19:58:34 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 632ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 19:59:48 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2762ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:06:48 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.5ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 313ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ET5K9139YCbYxDwX44gS+ztTI/HhD6c3yyhJ8ec2Kqk=", "q"=>"RWAR", "commit"=>"Broadcast"}
+  [1m[36mDevice Load (0.5ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+SENDING send_notification RWAR
+  Rendered push/broadcast.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 261ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-23 20:09:56 -0400
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:31:37 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 730ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 20:32:02 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.1ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:36:44 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 683ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:37:26 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (6.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 195ms (Views: 0.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 20:37:47 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.3ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:43:38 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.6ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 220ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 20:44:06 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:47:09 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 411ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:47:55 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 187ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 20:48:16 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 20:50:30 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 635ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 20:50:51 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg" for 192.168.1.49 at 2014-03-23 21:09:04 -0400
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg"}
+This is a test {"regId"=>"APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.5ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bGkOl3Vrofn5sYG6zBhzu44hj9lv-n2zXn8Od9VleSq4tGNeYYAnzz0aAm1q8Ro-gWtGGZo9Kluf7wbyAlmFH3a4jxq21XToyMKE3cArtdTUFrziSBYltnKcEE-DeL1xopZ3255U6-jMvPuYlko6-nN-EHDYg'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 220ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.1.49 at 2014-03-23 21:15:34 -0400
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.6ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.8ms)
+  Rendered /Users/max/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.8ms)

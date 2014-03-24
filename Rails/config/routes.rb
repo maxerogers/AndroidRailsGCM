@@ -1,4 +1,7 @@
 Rails2gcm::Application.routes.draw do
+  get "push/broadcast"
+  put "push/broadcast"
+  
   namespace :api do
     namespace :v1 do
       
@@ -13,6 +16,7 @@ Rails2gcm::Application.routes.draw do
       end
     end
   end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
